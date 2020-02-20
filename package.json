@@ -1,0 +1,24 @@
+{
+  "name": "todo-node",
+  "version": "1.0.0",
+  "description": "todo list made with node and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stompke/todo-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stompke/todo-node/issues"
+  },
+  "homepage": "https://github.com/Stompke/todo-node#readme",
+  "dependencies": {
+    "knex": "^0.20.10",
+    "sqlite3": "^4.1.1"
+  }
+}
