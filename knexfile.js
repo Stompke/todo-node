@@ -5,18 +5,9 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './dev.sqlite3',
-      connection: {
-        filename: './data/database.db3',
-      },
-      // needed when using foreign keys
-      pool: {
-        afterCreate: (conn, done) => {
-          // runs after a connection is made to the sqlite engine
-          conn.run('PRAGMA foreign_keys = ON', done); // turn on FK enforcement
-        },
-      },
-    }
+      filename: './data/todo.db3'
+    },
+    useNullAsDefault: true //only needed for SQLite
   },
 
   staging: {
